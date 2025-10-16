@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag img</title>
+  </head>
+  <body>
+    <!-- img (inline element) -->
+    <!-- <img src="./assets/image/image-800.jpg" alt="image alt text ..." /> -->
+    <!-- <hr> -->
+    <!--  -->
+    <!-- <img src="./assets/image/image-1200.jpg" alt="" loading="lazy"> -->
+    <!--  -->
+    <!-- <img src="./assets/image/image.webp" alt="" width="800" height="500"> -->
+    <!-- ====== -->
+    <img
+      src="./assets/image/image.jpg"
+      loading="lazy"
+      srcset="
+        ./assets/image/image-480.jpg  400w,
+        /assets/image/image-800.jpg   800w,
+        /assets/image/image-1200.jpg 1200w
+      "
+      sizes="(max-width:600px) 90vw , (max-width:1000px) 50vw, 800px"
+      alt=""
+    />
+  </body>
+</html>

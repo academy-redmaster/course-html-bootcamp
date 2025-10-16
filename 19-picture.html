@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag picutre</title>
+  </head>
+  <body>
+    <!-- tag picture (block element) -->
+    <!-- 1. -->
+    <!-- <picture>
+      <source srcset="./assets/image/image.webp" type="image/webp" />
+      <source srcset="./assets/image/image.webp" type="image/avif" />
+      ** fallback
+      <img src="./assets/image/image.png" alt="" type="image/png" />
+    </picture> -->
+    <!-- 2. -->
+    <picture>
+      <source
+        srcset="./assets/image/image-480.jpg"
+        type="image/jpg"
+        media="(max-width:600px)"
+      />
+      <source
+        srcset="./assets/image/image-800.jpg"
+        type="image/jpg"
+        media="(max-width:900px)"
+      />
+      <img src="./assets/image/image-1200.jpg" alt="" type="image/jpg" />
+    </picture>
+  </body>
+</html>
