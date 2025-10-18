@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag table</title>
+  </head>
+  <body>
+    <!-- tag table (block element) -->
+    <table border="2">
+      <!-- row - column -->
+      <tr>
+        <th scope="col">id</th>
+        <th>name</th>
+        <th>number</th>
+      </tr>
+      <tr>
+        <td>item 04</td>
+        <td>item 05</td>
+        <td>item 06</td>
+      </tr>
+      <tr>
+        <td>item 07</td>
+        <td>item 08</td>
+        <td>item 09</td>
+      </tr>
+    </table>
+    <hr />
+    <!--  -->
+    <table border="2">
+      <!-- row - column -->
+      <tr>
+        <th scope="row">id</th>
+        <td>item 01</td>
+        <td>item 02</td>
+      </tr>
+      <tr>
+        <th>name</th>
+        <td>item 05</td>
+        <td>item 06</td>
+      </tr>
+      <tr>
+        <th>number</th>
+        <td>item 08</td>
+        <td>item 09</td>
+      </tr>
+    </table>
+    <hr />
+    <!--  -->
+    <table border="10">
+      <colgroup>
+        <col style="background: red" />
+        <col span="2" style="background: #ccc" />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th colspan="2">name</th>
+          <th>year</th>
+          <th>price ($)</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>iPhone 16 Pro Max</td>
+          <td rowspan="2">Apple</td>
+          <td>2025</td>
+          <td>$1,199</td>
+          <td>6.9″ OLED, A18 Bionic chip, advanced camera system</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Apple iPhone 17</td>
+          <td>2025</td>
+          <td>~$999</td>
+          <td>Upgraded screen, strong audio, ideal for media consumption</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Samsung Galaxy S25 Ultra</td>
+          <td rowspan="2">Samsung</td>
+          <td>2025</td>
+          <td>$1,299</td>
+          <td>AI camera tech, ultra-fast charging, immersive display</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Samsung Galaxy A16 5G</td>
+          <td>2025</td>
+          <td>$165</td>
+          <td>Budget 5G, reliable performance, decent camera</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>OnePlus 13 Pro</td>
+          <td>OnePlus</td>
+          <td>2025</td>
+          <td>$899</td>
+          <td>Balanced performance, sleek design, fast charging</td>
+        </tr>
+
+      </tbody>
+      <tfoot>
+        <th>foot</th>
+        <td colspan="5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis ut est corrupti dicta voluptates, odit et optio perspiciatis assumenda tenetur, architecto nemo? Blanditiis autem maiores, sequi assumenda et nemo dolore!</td>
+      </tfoot>
+      <caption>google.com</caption>
+    </table>
+  </body>
+</html>

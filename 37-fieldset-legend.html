@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - fieldset & legend</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>اطلاعات شخصی:</legend>
+        <div>
+          <label for="fullname">نام کامل:</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <div>
+          <label for="bio">بیوگرافی کوتاه:</label>
+          <textarea
+            id="bio"
+            name="bio"
+            rows="3"
+            placeholder="چند خط درباره خودتان بنویسید..."
+          ></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>اطلاعات تماس:</legend>
+        <div>
+          <label for="email">ایمیل:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="phone">شماره تماس:</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>تنظیمات حساب کاربری:</legend>
+        <div>
+          <label>
+            <input type="checkbox" name="newsletter" value="yes" />
+            دریافت خبرنامه
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="alerts" value="yes" />
+            هشدارهای امنیتی
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit">ارسال فرم</button>
+    </form>
+  </body>
+</html>

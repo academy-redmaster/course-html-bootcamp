@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag select</title>
+  </head>
+  <body>
+    <!-- select tag -->
+    <label for="gender">Select Your Gender: </label>
+    <select id="gender">
+      <option value="" selected disabled>please choose</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <hr />
+    <!-- =============== -->
+    <label for="city">city:</label>
+    <select id="city" multiple size="5" name="">
+      <option disabled selected>شهر خود را انتخاب کنید:</option>
+      <option value="tehran">تهران</option>
+      <option>مشهد</option>
+      <option>اصفهان</option>
+      <option>شیراز</option>
+      <option>تبریز</option>
+      <option>اهواز</option>
+      <option>کرج</option>
+      <option>قم</option>
+      <option>کرمان</option>
+      <option>رشت</option>
+      <option>ارومیه</option>
+      <option>زاهدان</option>
+      <option>ساری</option>
+      <option>بندرعباس</option>
+      <option>همدان</option>
+      <option>یاسوج</option>
+      <option>سنندج</option>
+      <option>خرم‌آباد</option>
+      <option>بوشهر</option>
+      <option>گرگان</option>
+    </select>
+    <hr />
+    <!--  -->
+    <div dir="rtl">
+      <label for="month">ماه تولد خود را انتخاب کنید:</label>
+      <select name="" id="month">
+        <option value="" disabled selected>لیست ماه های سال</option>
+        <optgroup label="بهار" disabled>
+          <option value="Farvardin">فروردین</option>
+          <option value="Ordibehesht">اردیبهشت</option>
+          <option value="Khordad">خرداد</option>
+        </optgroup>
+        <optgroup label="تابستان">
+          <option value="Tir">تیر</option>
+          <option value="Mordad">مرداد</option>
+          <option value="Shahrivar">شهریور</option>
+        </optgroup>
+        <optgroup label="پاییز">
+          <option value="Mehr">مهر</option>
+          <option value="Aban">آبان</option>
+          <option value="Azar">آذر</option>
+        </optgroup>
+        <optgroup label="زمستان">
+          <option value="Dey">دی</option>
+          <option value="Bahman">بهمن</option>
+          <option value="Esfand">اسفند</option>
+        </optgroup>
+      </select>
+    </div>
+  </body>
+</html>

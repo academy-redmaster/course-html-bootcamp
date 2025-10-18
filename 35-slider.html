@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form - input(range)</title>
+  </head>
+  <body>
+    <!-- slider -->
+    <!-- <input type="range" min="0" max="100" value="90" step="1" disabled /> -->
+    <label for="volume">تنظیم صدا:</label>
+    <input
+      type="range"
+      id="volume"
+      name="volume"
+      min="0"
+      max="100"
+      step="10"
+      list="tickmarks"
+    />
+    <datalist id="tickmarks">
+      <option value="0">0</option>
+      <option value="20" />
+      <option value="40" />
+      <option value="60" />
+      <option value="80" />
+      <option value="100" />
+    </datalist>
+  </body>
+</html>

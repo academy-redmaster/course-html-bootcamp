@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 03</title>
+  </head>
+  <body>
+    <!-- data-* -->
+    <form>
+      <label for="count">your Country:</label>
+      <input type="text" id="count" list="country" spellcheck />
+      <datalist id="country">
+        <option data-value="iran">Iran</option>
+        <option value="russia">Russia</option>
+        <option>United States</option>
+        <option>China</option>
+      </datalist>
+      <hr />
+      <div dir="rtl">
+        <label for="cit">شهر:</label>
+        <input type="text" id="cit" list="city" />
+        <datalist id="city">
+          <option>تهران</option>
+          <option>مشهد</option>
+          <option>اصفهان</option>
+          <option>شیراز</option>
+          <option>تبریز</option>
+          <option>اهواز</option>
+          <option>کرج</option>
+          <option>قم</option>
+          <option>کرمان</option>
+          <option>رشت</option>
+          <option>ارومیه</option>
+          <option>زاهدان</option>
+          <option>ساری</option>
+          <option>بندرعباس</option>
+          <option>همدان</option>
+          <option>یاسوج</option>
+          <option>سنندج</option>
+          <option>خرم‌آباد</option>
+          <option>بوشهر</option>
+          <option>گرگان</option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
